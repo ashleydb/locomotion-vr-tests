@@ -254,24 +254,9 @@ public class MyGvrReticle : MonoBehaviour, IGvrGazePointer
             reticleOuterAngle = kReticleMinOuterAngle;
         }
 
-        // Should be equivalent to OnDrawGizmos
-        //Debug.DrawRay(target, Vector3.up, Color.red);
-
-        // For OnDrawGizmos
-        //mGizmoTarget = target;
-
-        // Using LineRenderer
-        //Testbed tb = this.GetComponentInParent<Testbed>();
-        tb.lineStartPos = target;
+        // Ash added this to draw an indicator using LineRenderer
+        posIndicator.lineStartPos = target;
     }
 
-    public Testbed tb = null; // For LineRenderer
-    //private Vector3 mGizmoTarget; // For OnDrawGizmos
-
-    /*
-    void OnDrawGizmos()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawRay(mGizmoTarget, Vector3.up);
-    }*/
+    public PositionIndicator posIndicator = null; // Ash added this to draw an indicator using LineRenderer. Set this in the editor
 }
