@@ -1,6 +1,8 @@
 # locomotion-vr-tests
 Unity scene using GoogleVR, testing some player locomotion ideas with limited user input.
 
+See a video of this in action here: https://youtu.be/ou8TKis23rc
+
 ![Unity Screenshot](screenshot.png)
 
 Based on an idea I blogged about here: http://blog.hiash.com/2016/08/vr-teleportation-mechanic_1.html
